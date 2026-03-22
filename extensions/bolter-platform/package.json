@@ -1,0 +1,16 @@
+{
+  "name": "bolter-platform",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "index.ts",
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1014.0",
+    "@sinclair/typebox": "^0.32.0",
+    "nats": "^2.28.0"
+  }
+}

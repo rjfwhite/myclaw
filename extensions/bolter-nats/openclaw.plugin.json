@@ -1,0 +1,9 @@
+{
+  "id": "bolter-nats",
+  "channels": ["bolter-nats"],
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}

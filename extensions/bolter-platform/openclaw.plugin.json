@@ -1,0 +1,8 @@
+{
+  "id": "bolter-platform",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}

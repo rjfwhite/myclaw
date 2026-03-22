@@ -1,0 +1,52 @@
+{
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "anthropic/claude-opus-4-6"
+      },
+      "models": {
+        "claude-opus-4-6": { "provider": "anthropic" },
+        "claude-sonnet-4-6": { "provider": "anthropic" },
+        "claude-haiku-4-5": { "provider": "anthropic" }
+      },
+      "maxConcurrent": 2,
+      "maxRunDuration": 7200000,
+      "subagents": {
+        "maxConcurrent": 4
+      }
+    }
+  },
+  "models": {
+    "providers": {
+      "anthropic": {
+        "api": "anthropic"
+      }
+    }
+  },
+  "plugins": {
+    "load": {
+      "paths": [
+        "./extensions/bolter-nats",
+        "./extensions/bolter-platform"
+      ]
+    }
+  },
+  "channels": {
+    "bolter-nats": {
+      "enabled": true
+    }
+  },
+  "gateway": {
+    "mode": "local",
+    "auth": {
+      "mode": "none"
+    },
+    "http": {
+      "endpoints": {
+        "chatCompletions": {
+          "enabled": true
+        }
+      }
+    }
+  }
+}

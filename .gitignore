@@ -1,0 +1,23 @@
+# Secrets & credentials
+openclaw.json
+device-identity.json
+identity/
+devices/paired.json
+
+# Sessions & ephemeral state
+agents/
+logs/
+update-check.json
+workspace/.git/
+workspace/.openclaw/
+
+# Node modules (installed from package.json)
+extensions/*/node_modules/
+extensions/*/package-lock.json
+
+# OS
+.DS_Store
+*.swp
+
+# Cache
+cache/
